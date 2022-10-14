@@ -2,12 +2,17 @@
 #introducido “pepe” y “asdasd” se indica “Has entrado al sistema”, sino se da un
 #error.
 
-nombre = ""
-contraseña = ""
-nombre = input("Dime un nombre de usuario:")
-contraseña = input("Dime la contraseña:")
+usuSecreto="Pepe"
+passSecreto="asdasd"
+usuario = input("Dime tu usuario: ")
+contrasena= input("Dime tu contraseña: ")
 
-if (nombre == "pepe" and contraseña == "asdasd"):
-    print("Has entrado al sistema")
-else:
-    print("Error")
+while (usuSecreto!=usuario or passSecreto!=contrasena) :
+ if(usuSecreto!=usuario) :
+    print("Error en el ususario") 
+    usuario = input("Dime tu usuario: ")
+ elif (passSecreto!=contrasena):
+    print("Error en la contraseña") 
+    usuario = input("Dime tu contraseña: ")
+
+print("Usuario y Contraseña correctos")
