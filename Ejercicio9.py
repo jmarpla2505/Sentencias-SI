@@ -14,3 +14,5 @@ ListaNumeros.insert(2, numero3)
 ordenados = sorted(ListaNumeros, reverse=True)
 
 print("El orden sería", ordenados)
+ultimo = len(ordenados)
+print ("El menor es ", ordenados[ultimo-1])
